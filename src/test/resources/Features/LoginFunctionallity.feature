@@ -1,4 +1,5 @@
 Feature: Login functionality
+
   @UI @Run
   Scenario: Valid login functionality
     Given user insert username
@@ -6,5 +7,8 @@ Feature: Login functionality
     When user clicks on Login button
     Then user is redirect to homepage
     And user clicks on Log0ut button
+    And insert username
+    And insert password
+
 
   Scenario: InValid login functionality
